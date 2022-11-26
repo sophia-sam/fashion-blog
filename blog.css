@@ -1,5 +1,17 @@
+@font-face {
+	font-family: 'themify';
+	src:url("../../../Documents/GitHub/joeblog/public_html/assets/vendors/themify-icons/fonts/themify.eot");
+	src:url("../../../Documents/GitHub/joeblog/public_html/assets/vendors/themify-icons/fonts/themify.eot") format("embedded-opentype"),
+		url("../../../Documents/GitHub/joeblog/public_html/assets/vendors/themify-icons/fonts/themify.woff") format("woff"),
+		url("../../../Documents/GitHub/joeblog/public_html/assets/vendors/themify-icons/fonts/themify.ttf") format("truetype"),
+		url("../../../Documents/GitHub/joeblog/public_html/assets/vendors/themify-icons/fonts/themify.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+  font-family: "themify";
+}
 /* @import url(./themify-icons.css);
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 @import url(./responsive.css); */
 /* section {
     padding: 55px 0;
@@ -138,36 +150,36 @@ hr {
 } */
 div.container-nav1{
   display: inline;
-  background-color: white;
-  border-bottom: 4px solid black;
-  display: inline;
+ background-color: black;
 }
 div.logo img{
-  height: 15%;
-  width:  15%;
-  padding-left: 20%;
+  height: 20px;
+  width:  20px;
 }
 div.socials{
   float: left;
   display: grid;
   grid-template-columns: repeat(6,1fr);
-  padding-bottom: 45px;
   align-items: center;
   gap: 20px;
+  padding-top: 3px;
 }
 div.logo{
   float: right;
-  width: 150px;
-  height: 150px;
-  padding-left:1000px;
+  width: 20px;
+  height: 20px;
+  padding-left:100px;
+  padding-right: 3px;
+  padding-top: 3px;
 } 
 div.socials img{
   width: 25px;
   height: 25px;
 }
 .firstnav{
-  height: 10px;
-  background-color:white;
+  padding: 0px;
+  background-color:black;
+  height: 35px;
 }
 .container-nav2{
   text-decoration: none;
@@ -178,44 +190,67 @@ div.socials img{
   width: 28%;
   height: 28%;
 }
-img{
-  background-color: white;
-}
-.special{
-  width: 120%;
-  height: 120%;
-}
 #intro{
-  background-color: black !important;
+  background-color:white !important;
   text-align: center !important;
-  height: 200px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  /* justify-content: center; */
-  /* align-items: center; */
+  justify-content: center;
+   align-items: center; 
   background-image: linear-gradient(62deg, #181719 100%);
 }
 #intro p{
-  color:white;
+  color:black;
   /* vertical-align: middle; */
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 200;
+  line-height: 5%;
 }
-h1{
-  color: white;
-  font-size: 2rem;
+#intro h1{
+  color: black;
+  font-size: 3rem;
   font-family: sans-serif;
   /* vertical-align: middle; */
+  line-height: 5%;
 }
 .big-image{
  background-image: url(https://www.w3schools.com/w3images/jane.jpg);
- height: 1000px;
+ background-image:url(./blog\ images/Tweet\ _\Twitter.jpeg );
  background-repeat: no-repeat;
+ height: 100vh;
+ width: 100%;
+ background-size:cover;
+ background-position: center;
+ color: white;
 }
-.big-image img{
-  background-size: cover;
-  background-position: center;
-  width:100vh;
+.big-image a{
+  text-decoration: none;
+  color: white;
+}
+#intro button{
+  background-color: black;
+  color: white;
+  font-family: "themify";
+  height: 200%;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+footer{
+  height: 100px;
+  background-color: grey;
+  color: white;
+  padding-top: 2%;
+}
+footer img{
+  height: 20px;
+  width: 20px;
+}
+footer a{
+  height: 45px;
+  width: 45px;
+  background-color: black;
+  font-size: 2rem;
 }
